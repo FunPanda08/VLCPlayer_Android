@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <LinearLayout
+        android:id="@+id/adlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"       
+        android:gravity="center" >
+
+        <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="a1532c3c9a2153d"
+            ads:loadAdOnCreate="true"
+            ads:testDevices="TEST_EMULATOR, TEST_DEVICE_ID"
+            android:gravity="center" />
+    </LinearLayout>
+    <GridView
+        android:id="@id/android:list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/adlayout"
+        android:paddingTop="10dip"
+        android:paddingBottom="10dip"
+        android:clipToPadding="false"
+        android:scrollbarStyle="outsideInset"
+        android:numColumns="auto_fit"
+        android:fastScrollEnabled="true"
+        android:fadingEdge="none"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@id/android:empty"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/adlayout"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textview_nomedia"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/nomedia"
+            android:textSize="20sp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/layout_flipper_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:visibility="invisible" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/loading"
+                android:textSize="20sp" />
+
+            <ViewFlipper
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="left"
+                android:autoStart="true"
+                android:flipInterval="1000" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/empty"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/load_1_period"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/load_2_period"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/load_3_period"
+                    android:textSize="20sp" />
+            </ViewFlipper>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

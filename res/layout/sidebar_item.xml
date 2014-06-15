@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dip"
+    android:layout_marginRight="5dip"
+    android:layout_marginTop="5dip"
+    android:drawableLeft="@drawable/icon"
+    android:drawablePadding="5dip"
+    android:gravity="left|center_vertical"
+    android:padding="13dip"
+    android:text="@string/title"
+    android:textColor="?attr/list_menu"
+    android:textSize="20sp" />

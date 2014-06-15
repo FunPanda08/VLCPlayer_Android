@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="info_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.VLC" parent="Theme.VLC.Apearance">
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="actionBarSize">50dp</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+    </style>
+
+    <style name="Theme.VLC.Apearance" parent="Theme.Sherlock.Light">
+        <item name="marginTopContent">50dp</item>
+
+        <item name="android:listViewStyle">@style/Theme.VLC.List</item>
+        <item name="android:gridViewStyle">@style/Theme.VLC.List</item>
+        <item name="android:expandableListViewStyle">@style/Theme.VLC.List</item>
+        <item name="android:dropDownListViewStyle">@style/Theme.VLC.List</item>
+
+        <item name="item_common_pressed">@color/item_common_pressed</item>
+        <item name="item_common_selected">@color/item_common_selected</item>
+        <item name="item_footer">@color/item_footer</item>
+        <item name="playlist_item_footer">@color/grey2</item>
+        <item name="background_menu_divider">@color/background_menu_divider</item>
+        <item name="background_menu">@color/background_menu</item>
+        <item name="background_player">@color/background_player</item>
+        <item name="background_playlist">@color/background_playlist</item>
+        <item name="background_header">@color/background_menu</item>
+        <item name="audio_browser_separator">@color/darkorange</item>
+        <item name="playlist_item_drag_shadow">@color/darkorange</item>
+        <item name="audio_player_header_time">@color/darkorange</item>
+        <item name="font_default">@color/font_default</item>
+        <item name="font_light">@color/font_light</item>
+        <item name="list_menu">@color/font_light</item>
+        <item name="list_subtitle">@color/list_subtitle</item>
+        <item name="list_title_last">@color/list_title_last</item>
+        <item name="list_title">@color/list_title</item>
+        <item name="android:windowBackground">@color/background_common</item>
+
+        <item name="mini_player_top_shadow">@drawable/mini_player_top_shadow</item>
+        <item name="audio_playlist_shadow">@drawable/audio_playlist_shadow</item>
+        <item name="header_fadein_overlay">@drawable/header_fadein_overlay</item>
+        <item name="header_fadeout_overlay">@drawable/header_fadeout_overlay</item>
+
+        <item name="ic_playlist_normal">@drawable/ic_playlist_normal</item>
+        <item name="ic_playlist_pressed">@drawable/ic_playlist_pressed</item>
+        <item name="ic_repeat_normal">@drawable/ic_repeat_normal</item>
+        <item name="ic_repeat_pressed">@drawable/ic_repeat_pressed</item>
+        <item name="ic_repeat_one">@drawable/ic_repeat_one</item>
+        <item name="ic_shuffle_normal">@drawable/ic_shuffle_normal</item>
+        <item name="ic_shuffle_pressed">@drawable/ic_shuffle_pressed</item>
+        <item name="ic_audio_player_dots">@drawable/dots_dark</item>
+        <item name="ic_play">@drawable/ic_play</item>
+        <item name="ic_pause">@drawable/ic_pause</item>
+        <item name="ic_previous">@drawable/ic_previous</item>
+        <item name="ic_next">@drawable/ic_next</item>
+        <item name="ic_menu_video">@drawable/ic_menu_video</item>
+        <item name="ic_menu_audio">@drawable/ic_menu_audio</item>
+        <item name="ic_menu_folder">@drawable/ic_menu_folder</item>
+        <item name="ic_menu_history">@drawable/ic_menu_history</item>
+
+        <item name="advanced_options_style">@style/Theme.VLC.AdvancedOptionsLight</item>
+    </style>
+
+    <style name="Theme.VLC.Black" parent="Theme.VLC.Apearance.Black">
+        <item name="actionBarStyle">@style/ActionBar</item>
+        <item name="actionBarSize">50dp</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="actionOverflowButtonStyle">@style/ActionBar.OverflowButton</item>
+    </style>
+
+    <style name="Theme.VLC.Apearance.Black" parent="Theme.Sherlock">
+        <item name="marginTopContent">50dp</item>
+
+        <item name="android:listViewStyle">@style/Theme.VLC.List</item>
+        <item name="android:gridViewStyle">@style/Theme.VLC.List</item>
+        <item name="android:expandableListViewStyle">@style/Theme.VLC.List</item>
+        <item name="android:dropDownListViewStyle">@style/Theme.VLC.List</item>
+
+        <item name="item_common_pressed">@color/item_common_pressed</item>
+        <item name="item_common_selected">@color/item_common_selected</item>
+        <item name="item_footer">@color/grey1</item>
+        <item name="playlist_item_footer">@color/grey1</item>
+        <item name="background_menu_divider">@color/grey1</item>
+        <item name="background_menu">@color/black2</item>
+        <item name="background_player">@color/black1</item>
+        <item name="background_playlist">@color/black2</item>
+        <item name="background_header">@color/black3</item>
+        <item name="audio_browser_separator">@color/darkorange</item>
+        <item name="playlist_item_drag_shadow">@color/darkorange</item>
+        <item name="audio_player_header_time">@color/darkorange</item>
+        <item name="font_default">@color/white</item>
+        <item name="font_light">@color/font_light</item>
+        <item name="list_menu">@color/white</item>
+        <item name="list_subtitle">@color/list_subtitle</item>
+        <item name="list_title_last">@color/list_title_last</item>
+        <item name="list_title">@color/bt_list_title</item>
+        <item name="android:windowBackground">@color/black2</item>
+
+        <item name="mini_player_top_shadow">@null</item>
+        <item name="audio_playlist_shadow">@null</item>
+        <item name="header_fadein_overlay">@drawable/bt_header_fadein_overlay</item>
+        <item name="header_fadeout_overlay">@drawable/bt_header_fadeout_overlay</item>
+
+        <item name="ic_playlist_normal">@drawable/ic_playlist_normal_w</item>
+        <item name="ic_playlist_pressed">@drawable/ic_playlist_pressed</item>
+        <item name="ic_repeat_normal">@drawable/ic_repeat_normal_w</item>
+        <item name="ic_repeat_pressed">@drawable/ic_repeat_pressed</item>
+        <item name="ic_repeat_one">@drawable/ic_repeat_one</item>
+        <item name="ic_shuffle_normal">@drawable/ic_shuffle_normal_w</item>
+        <item name="ic_shuffle_pressed">@drawable/ic_shuffle_pressed</item>
+        <item name="ic_audio_player_dots">@drawable/dots</item>
+        <item name="ic_play">@drawable/ic_play_w</item>
+        <item name="ic_pause">@drawable/ic_pause_w</item>
+        <item name="ic_previous">@drawable/ic_previous_w</item>
+        <item name="ic_next">@drawable/ic_next_w</item>
+        <item name="ic_menu_video">@drawable/ic_menu_video_w</item>
+        <item name="ic_menu_audio">@drawable/ic_menu_audio_w</item>
+        <item name="ic_menu_folder">@drawable/ic_menu_folder_w</item>
+        <item name="ic_menu_history">@drawable/ic_menu_history_w</item>
+
+        <item name="advanced_options_style">@style/Theme.VLC.AdvancedOptionsBlack</item>
+    </style>
+
+    <style name="Theme.VLC.List">
+        <item name="android:listSelector">@drawable/background_item</item>
+    </style>
+
+    <style name="Theme.VLC.NoTitleBar" parent="Theme.Sherlock.Light.NoActionBar">
+        <item name="item_common_pressed">@color/item_common_pressed</item>
+        <item name="item_common_selected">@color/item_common_selected</item>
+        <item name="item_footer">@color/item_footer</item>
+        <item name="background_menu_divider">@color/background_menu_divider</item>
+        <item name="background_menu">@color/background_menu</item>
+        <item name="background_player">@color/background_player</item>
+        <item name="font_default">@color/font_default</item>
+        <item name="font_light">@color/font_light</item>
+        <item name="android:windowBackground">@color/background_common</item>
+    </style>
+
+    <style name="Theme.VLC.Fullscreen" parent="android:Theme.NoTitleBar.Fullscreen">
+        <item name="android:windowBackground">@color/black</item>
+        <item name="video_player_overlay">@color/transparent_gray</item>
+
+        <item name="advanced_options_style">@style/Theme.VLC.AdvancedOptionsBlack</item>
+    </style>
+
+    <style name="ActionBar" parent="Widget.Sherlock.Light.ActionBar">
+        <item name="background">@drawable/actionbar_background</item>
+        <item name="titleTextStyle">@style/ActionBar.Text</item>
+    </style>
+
+    <style name="ActionBar.Text" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/action_bar_title</item>
+    </style>
+
+    <style name="ActionBar.OverflowButton">
+        <item name="android:src">@drawable/ic_menu_overflow</item>
+    </style>
+
+    <!-- Advanced options menu styles -->
+
+    <style name="Theme.VLC.AdvancedOptions" parent="@android:style/Theme.Dialog">
+      <item name="android:windowIsFloating">true</item>
+      <item name="android:backgroundDimEnabled">false</item>
+      <item name="android:windowIsTranslucent">false</item>
+      <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.VLC.AdvancedOptionsLight" parent="Theme.VLC.AdvancedOptions">
+      <item name="android:windowBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+      <item name="android:textColor">@color/grey1</item>
+      <item name="advanced_options_divider">@color/darkgrey</item>
+      <item name="ic_speed_normal_style">@drawable/ic_speed_normal</item>
+      <item name="ic_sleep_normal_style">@drawable/ic_sleep_normal</item>
+      <item name="ic_jumpto_normal_style">@drawable/ic_jumpto_normal</item>
+      <item name="ic_equalizer_normal_style">@drawable/ic_equalizer_normal</item>
+      <item name="ic_down_style">@drawable/ic_down</item>
+      <item name="ic_up_style">@drawable/ic_up</item>
+    </style>
+    
+
+    <style name="Theme.VLC.AdvancedOptionsBlack" parent="Theme.VLC.AdvancedOptions">
+      <item name="android:windowBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+      <item name="android:textColor">@color/white</item>
+      <item name="advanced_options_divider">@color/grey1</item>
+      <item name="ic_speed_normal_style">@drawable/ic_speed_normal_w</item>
+      <item name="ic_sleep_normal_style">@drawable/ic_sleep_normal_w</item>
+      <item name="ic_jumpto_normal_style">@drawable/ic_jumpto_normal_w</item>
+      <item name="ic_equalizer_normal_style">@drawable/ic_equalizer_normal_w</item>
+      <item name="ic_down_style">@drawable/ic_down_w</item>
+      <item name="ic_up_style">@drawable/ic_up_w</item>
+    </style>
+</resources>
